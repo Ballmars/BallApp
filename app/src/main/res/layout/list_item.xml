@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     app:cardCornerRadius="5dp"
@@ -19,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="7dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="@string/name"
             android:textColor="#616161"
             android:textSize="18sp"
@@ -32,11 +34,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="7dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:text="@string/designation"
             android:textColor="#616161"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvEmpName" />
+
+        <TextView
+            android:id="@+id/tvIsSurgeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:text="@string/is_surgeon"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmpDesignation" />
+
+        <TextView
+            android:id="@+id/tvIsSurgeonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="262dp"
+            android:text="@string/no"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvIsSurgeon"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmpDesignation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
